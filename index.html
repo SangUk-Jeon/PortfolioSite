@@ -171,34 +171,17 @@
                 <section class="github section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">My GitHub</h2>
-                            <div class="github-graph">
-
-                            </div><!--//github-graph-->
-                            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-
-                            <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-                            <link rel="stylesheet"
-                                  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-
-                            <!-- Prepare a container for your calendar. -->
-                            <div class="calendar">
-                                <!-- Loading stuff -->
-                                Loading the data just for you.
-                            </div>
-
-                            <script>
-                                GitHubCalendar(".calendar", "SangUk-Jeon");
-
-                                // or enable responsive functionality:
-                                GitHubCalendar(".calendar", "SangUk-Jeon", { responsive: true });
-
-                                // Use a proxy
-                                GitHubCalendar(".calendar", "SangUk-Jeon", {
-                                }).then(r => r.text())
-                            </script>
-                            <div id="feed">
-                                <iframe allowtransparency="true" frameborder="0" scrolling="no" seamless="seamless" src="https://sangukjeon.tech/assets/plugins/git_activity/gh-activity.html?user=SangUk-Jeon&type=user" height="100%" width="100%"></iframe>
-                            </div>
+                            <p>
+                        <script>
+                            GitHubCalendar(".calendar", "SangUk-Jeon", { responsive: true });
+                        </script>
+                        <div class="calendar">
+                        </div>
+                        <p>    
+                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->                       
+                        <div id="feed">
+                            <iframe allowtransparency="true" frameborder="0" scrolling="no" seamless="seamless" src="https://sangukjeon.tech/assets/plugins/git_activity/gh-activity.html?user=SangUk-Jeon&type=user"   height="100%" width="100%"></iframe>
+                        </div>
 
                             <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->
                             <div id="ghfeed" class="ghfeed">
