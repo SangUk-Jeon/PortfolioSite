@@ -1,3 +1,3 @@
 # SangUk-Jeon PortfolioSite 
 
-My Site : https://sangukjeon.tech
+My Site : https://sanguk-jeon.github.io/PortfolioSite/
