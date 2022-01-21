@@ -1,397 +1,550 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <title>전상욱 | 포트폴리오</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Boootstrap Portfolio/Resume Theme for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico">  
-    
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-    
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
-    
-    <!-- Channel Plugin Scripts -->
-<script>
-  (function() {
-    var w = window;
-    if (w.ChannelIO) {
-      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
-    }
-    var ch = function() {
-      ch.c(arguments);
-    };
-    ch.q = [];
-    ch.c = function(args) {
-      ch.q.push(args);
-    };
-    w.ChannelIO = ch;
-    function l() {
-      if (w.ChannelIOInitialized) {
-        return;
-      }
-      w.ChannelIOInitialized = true;
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
-      s.charset = 'UTF-8';
-      var x = document.getElementsByTagName('script')[0];
-      x.parentNode.insertBefore(s, x);
-    }
-    if (document.readyState === 'complete') {
-      l();
-    } else if (window.attachEvent) {
-      window.attachEvent('onload', l);
-    } else {
-      window.addEventListener('DOMContentLoaded', l, false);
-      window.addEventListener('load', l, false);
-    }
-  })();
-  ChannelIO('boot', {
-    "pluginKey": "92a6a13f-eb50-4d1b-9220-fab364f69bae"
-  });
-</script>
-<!-- End Channel Plugin -->
-	
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
-    
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
-    <!-- github activity css -->  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
-    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
 
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    
-</head> 
+<head>
+  <title>전상욱 | 포트폴리오</title>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Boootstrap Portfolio/Resume Theme for Developers">
+  <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
+    type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- FontAwesome JS -->
+  <script defer src="assets/fontawesome/js/all.js"></script>
+
+  <!-- Channel Plugin Scripts -->
+  <script>
+    (function () {
+      var w = window;
+      if (w.ChannelIO) {
+        return (window.console.error || window.console.log || function () { })('ChannelIO script included twice.');
+      }
+      var ch = function () {
+        ch.c(arguments);
+      };
+      ch.q = [];
+      ch.c = function (args) {
+        ch.q.push(args);
+      };
+      w.ChannelIO = ch;
+      function l() {
+        if (w.ChannelIOInitialized) {
+          return;
+        }
+        w.ChannelIOInitialized = true;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+        s.charset = 'UTF-8';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      if (document.readyState === 'complete') {
+        l();
+      } else if (window.attachEvent) {
+        window.attachEvent('onload', l);
+      } else {
+        window.addEventListener('DOMContentLoaded', l, false);
+        window.addEventListener('load', l, false);
+      }
+    })();
+    ChannelIO('boot', {
+      "pluginKey": "92a6a13f-eb50-4d1b-9220-fab364f69bae"
+    });
+  </script>
+  <!-- End Channel Plugin -->
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
+  <!-- github calendar css -->
+  <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+  <!-- github activity css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+  <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+</head>
 
 <body>
-    <!-- ******HEADER****** --> 
-    <header class="header">
-        <div class="container">     
-	        <div class="row align-items-center">
-			    <div class="col">         
-		            <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.png" alt="profile image" />
-		            <div class="profile-content">
-		                <h1 class="name">전상욱</h1>
-                        <h2 class="desc">Maker, Student Developer</h2>   
-		                <ul class="social list-inline">
-		                    <li class="list-inline-item"><a href="https://github.com/SangUk-Jeon"><i class="fab fa-github-alt"></i></a></li>
-		                </ul> 
-		            </div><!--//profile-->
-			    </div><!--//col-->
-	            <div class="col-12 col-md-auto">
-		            <div class="dark-mode-switch d-flex">
-						<div class="form-check form-switch mx-auto mx-md-0">
-							<input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
-							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
-						</div>
-			        </div><!--//dark-mode-switch-->
-	                <a class="btn btn-cta-primary" href="https://sanguk.tistory.com/" target="_blank"><i class="fas fa-paper-plane"></i> 블로그 방문</a>        
-	            </div><!--//col-->
-	        </div><!--//row-->         
-        </div><!--//container-->
-    </header><!--//header-->
-    
-    <div class="container sections-wrapper py-5">
-        <div class="row">
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Hello, World!</h2>
-                        <div class="content">
-                            <p>2022년 올해의 컬러로 포트폴리오 사이트 변경 ( 팬톤 선정 )</p>
-                            <p>베리 페리 | Hex Code : #6666AB | RGB Code : 102, 103, 171</p>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
+  <!-- ******HEADER****** -->
+  <header class="header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.png"
+            alt="profile image" />
+          <div class="profile-content">
+            <h1 class="name">전상욱</h1>
+            <h2 class="desc">Maker, Student Developer</h2>
+            <ul class="social list-inline">
+              <li class="list-inline-item"><a href="https://github.com/SangUk-Jeon"><i
+                    class="fab fa-github-alt"></i></a></li>
+            </ul>
+          </div>
+          <!--//profile-->
+        </div>
+        <!--//col-->
+        <div class="col-12 col-md-auto">
+          <div class="dark-mode-switch d-flex">
+            <div class="form-check form-switch mx-auto mx-md-0">
+              <input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
+              <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+            </div>
+          </div>
+          <!--//dark-mode-switch-->
+          <a class="btn btn-cta-primary" href="https://sanguk.tistory.com/" target="_blank"><i
+              class="fas fa-paper-plane"></i> 블로그 방문</a>
+        </div>
+        <!--//col-->
+      </div>
+      <!--//row-->
+    </div>
+    <!--//container-->
+  </header>
+  <!--//header-->
 
-                <section class="latest section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Participating work</h2>
-                        <div class="content">
-                            <div class="item featured text-center">
-                                </div><!--//desc-->
-                            <div class="item row">
-                                <p><i class="fas fa-handshake"></i> 몽실학교 - 메이커 (심화)</p>
-                                <p>아두이노를 이용한 작품</p>
-                                <div class="desc col-md-8 col-12">
+  <div class="container sections-wrapper py-5">
+    <div class="row">
+      <div class="primary col-lg-8 col-12">
+        <section class="about section">
+          <div class="section-inner shadow-sm rounded">
+            <h2 class="heading">Hello, World!</h2>
+            <div class="content">
+              <p>2022년 올해의 컬러로 포트폴리오 사이트 변경 ( 팬톤 선정 )</p>
+              <p>베리 페리 | Hex Code : #6666AB | RGB Code : 102, 103, 171</p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//section-inner-->
+        </section>
+        <!--//section-->
 
-                                </div><!--//desc-->
-                            </div><!--//item-->
-				
-				<div class="item row">
-                                <p><i class="fas fa-handshake"></i> 몽실학교 - 자치회</p>
-                                <p>자치회 학생</p>
-                                <div class="desc col-md-8 col-12">
+        <section class="latest section">
+          <div class="section-inner shadow-sm rounded">
+            <h2 class="heading">Participating work</h2>
+            <div class="content">
+              <div class="item featured text-center">
+              </div>
+              <!--//desc-->
+              <div class="item row">
+                <p><i class="fas fa-handshake"></i> 몽실학교 - 메이커 (심화)</p>
+                <p>아두이노를 이용한 작품</p>
+                <div class="desc col-md-8 col-12">
 
-                                </div><!--//desc-->
-                            </div><!--//item-->
+                </div>
+                <!--//desc-->
+              </div>
+              <!--//item-->
 
-                            <div class="item row">
-                                <p><i class="fas fa-handshake"></i> 꿈의 학교 - 굄성 (매거진)</p>
-                                <p>나만의 덕질</p>
-                                <div class="desc col-md-8 col-12">
+              <div class="item row">
+                <p><i class="fas fa-handshake"></i> 몽실학교 - 자치회</p>
+                <p>자치회 학생</p>
+                <div class="desc col-md-8 col-12">
 
-                                </div><!--//desc-->
-                            </div><!--//item-->
-				
-				<div class="item row">
-                                <p><i class="fas fa-handshake"></i> 몽실학교_견우프로젝트 - 개나소나메이커</p>
-                                <p>프로젝트 참여 학생</p>
-                                <div class="desc col-md-8 col-12">
+                </div>
+                <!--//desc-->
+              </div>
+              <!--//item-->
 
-                                </div><!--//desc-->
-                            </div><!--//item-->
+              <div class="item row">
+                <p><i class="fas fa-handshake"></i> 꿈의 학교 - 굄성 (매거진)</p>
+                <p>나만의 덕질</p>
+                <div class="desc col-md-8 col-12">
 
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
+                </div>
+                <!--//desc-->
+              </div>
+              <!--//item-->
 
-                <section class="projects section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Projects</h2>
-                        <div class="content">
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-lightbulb"></i><a href="https://github.com/SangUk-Jeon/KeyPad_Example" target="_blank"> KeyPad_Example</a></h3>
-                                <p class="summary">4x4 키패드 모듈을 이용하여 LED 를 제어</p>
-                                <p><a class="more-link" href="https://github.com/SangUk-Jeon/KeyPad_Example/archive/refs/heads/main.zip" target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-lightbulb"></i><a href="https://github.com/SangUk-Jeon/Bluetooth_Example" target="_blank"> Bluetooth_Arduino</a></h3>
-                                <p class="summary">setup() 함수에서 시리얼 통신 속도를 9600으로 설정하고 핀 8과 9의 상태를 출력(OUTPUT)으로 설정합니다. loop() 함수에서 if 문으로 시리얼 통신 데이터를 수신한 경우, 이 값을 시리얼 모니터에 출력합니다.</p>
-                                <p><a class="more-link" href="https://github.com/SangUk-Jeon/Bluetooth_Example/archive/refs/heads/main.zip" target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-lightbulb"></i><a href="https://sanguk.tistory.com/7" target="_blank"> 안전지킴가방</a></h3>
-                                <p class="summary">2019 드림메이커스에서 만든 가방입니다.</p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-lightbulb"></i><a href="https://sanguk.tistory.com/21" target="_blank"> LED 스트립 - 책장 꾸미기</a></h3>
-                                <p class="summary">책장에 LED 스트립을 설치 후 TP4056 모듈등을 이용하여 전원을 관리하였습니다.</p>
-                            </div><!--//item-->
-				<div class="item">
-                                <h3 class="title"><i class="fas fa-lightbulb"></i><a href="https://github.com/SangUk-Jeon/PortfolioSite" target="_blank"> 포트폴리오 사이트 - 생성 </a></h3>
-                                <p class="summary">깃허브 사이트를 이용하여 포트폴리오 사이트 제작 - 매년 포트폴리오 사이트의 색을 변경</p>
+              <div class="item row">
+                <p><i class="fas fa-handshake"></i> 몽실학교_견우프로젝트 - 개나소나메이커</p>
+                <p>프로젝트 참여 학생</p>
+                <div class="desc col-md-8 col-12">
 
-                            <a class="btn btn-cta-secondary" href="https://github.com/SangUk-Jeon">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
+                </div>
+                <!--//desc-->
+              </div>
+              <!--//item-->
 
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
+            </div>
+            <!--//content-->
+          </div>
+          <!--//section-inner-->
+        </section>
+        <!--//section-->
 
-                <section class="experience section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Prize</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">표창장 - 봉사 부문<span class="place"><a> 의정부 청룡초등학교</a></span> <span class="year">(2019)</span></h3>
-                                <p>위 어린이는 착한 마음씨로 선행을 실천하며 봉사정신이 투철하여 다른 어린이의 모법이 되므로 제 97회 어린이 날을 맞아 표창합니다.</p>
-                            </div><!--//item-->
+        <section class="projects section">
+          <div class="section-inner shadow-sm rounded">
+            <h2 class="heading">Projects</h2>
+            <div class="content">
+            </div>
+            <!--//item-->
+            <div class="item">
+              <h3 class="title"><i class="fas fa-lightbulb"></i><a
+                  href="https://github.com/SangUk-Jeon/Bluetooth_Example" target="_blank"> Bluetooth_Arduino</a></h3>
+              <p class="summary">setup() 함수에서 시리얼 통신 속도를 9600으로 설정하고 핀 8과 9의 상태를 출력(OUTPUT)으로 설정합니다. loop() 함수에서 if 문으로
+                시리얼 통신 데이터를 수신한 경우, 이 값을 시리얼 모니터에 출력합니다.</p>
+              <p><a class="more-link"
+                  href="https://github.com/SangUk-Jeon/Bluetooth_Example/archive/refs/heads/main.zip" target="_blank"><i
+                    class="fas fa-external-link-alt"></i>Download Now</a></p>
+            </div>
+            <!--//item-->
+            <div class="item">
+              <h3 class="title"><i class="fas fa-lightbulb"></i><a href="https://sanguk.tistory.com/7" target="_blank">
+                  안전지킴가방</a></h3>
+              <p class="summary">2019 드림메이커스에서 만든 가방입니다.</p>
+            </div>
+            <!--//item-->
+            <div class="item">
+              <h3 class="title"><i class="fas fa-lightbulb"></i><a href="https://sanguk.tistory.com/21" target="_blank">
+                  LED 스트립 - 책장 꾸미기</a></h3>
+              <p class="summary">책장에 LED 스트립을 설치 후 TP4056 모듈등을 이용하여 전원을 관리하였습니다.</p>
+            </div>
+            <!--//item-->
+            <div class="item">
+              <h3 class="title"><i class="fas fa-lightbulb"></i><a href="https://github.com/SangUk-Jeon/PortfolioSite"
+                  target="_blank"> 포트폴리오 사이트 - 생성 </a></h3>
+              <p class="summary">깃허브 사이트를 이용하여 포트폴리오 사이트 제작 - 매년 포트폴리오 사이트의 색을 변경</p>
 
-                            <div class="item">
-                                <h3 class="title">당선증 - 부회장<span class="place"><a> 의정부 청룡초학교</a></span> <span class="year">(2019)</span></h3>
-                                <p>위 후보는 2019년 8월 29일 실시한 학급자치회 임원선거에서 부회장 당선인으로 결정되었으므로 당선증을 드립니다.</p>
-                            </div><!--//item-->
+              <a class="btn btn-cta-secondary" href="https://github.com/SangUk-Jeon">More on GitHub <i
+                  class="fas fa-chevron-right pt-1"></i></a>
 
-                            <div class="item">
-                                <h3 class="title">상장 - 포트폴리오<span class="place"><a> 의정부 동암중학교</a></span> <span class="year">(2020)</span></h3>
-                                <p>위 학생은 진로포트폴리오대회에서 위와 같이 우수한 성적을 거두었기에 상장을 수여합니다.</p>
-                            </div><!--//item-->
+            </div>
+            <!--//content-->
+          </div>
+          <!--//section-inner-->
+        </section>
+        <!--//section-->
 
-                            <div class="item">
-                                <h3 class="title">근면상 - 책임감<span class="place"><a> 의정부 동암중학교</a></span> <span class="year">(2021)</span></h3>
-                                <p>위 학생은 주어진 일에 책임감을 가지고 꾸준히 생활하는 모습이 다른 학생의 모범이 되므로 이에 표창함.</p>
-                            </div><!--//item-->
+        <section class="experience section">
+          <div class="section-inner shadow-sm rounded">
+            <h2 class="heading">Prize</h2>
+            <div class="content">
+              <div class="item">
+                <h3 class="title">표창장 - 봉사 부문<span class="place"><a> 의정부 청룡초등학교</a></span> <span
+                    class="year">(2019)</span></h3>
+                <p>위 어린이는 착한 마음씨로 선행을 실천하며 봉사정신이 투철하여 다른 어린이의 모법이 되므로 제 97회 어린이 날을 맞아 표창합니다.</p>
+              </div>
+              <!--//item-->
 
-                            <div class="item">
-                                <h3 class="title">상장 - 발명아이디어대회<span class="place"><a> 의정부 동암중학교</a></span> <span class="year">(2021)</span></h3>
-                                <p>위 학생은 발명아이디어대회에서 두서와 같은 성적을 얻었기에 이 상장을 수여합니다.</p>
-                            </div><!--//item-->
+              <div class="item">
+                <h3 class="title">당선증 - 부회장<span class="place"><a> 의정부 청룡초학교</a></span> <span class="year">(2019)</span>
+                </h3>
+                <p>위 후보는 2019년 8월 29일 실시한 학급자치회 임원선거에서 부회장 당선인으로 결정되었으므로 당선증을 드립니다.</p>
+              </div>
+              <!--//item-->
 
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-                <section class="github section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">My GitHub</h2>
-                            <div class="github-graph">
+              <div class="item">
+                <h3 class="title">상장 - 포트폴리오<span class="place"><a> 의정부 동암중학교</a></span> <span
+                    class="year">(2020)</span></h3>
+                <p>위 학생은 진로포트폴리오대회에서 위와 같이 우수한 성적을 거두었기에 상장을 수여합니다.</p>
+              </div>
+              <!--//item-->
 
-                            </div><!--//github-graph-->
-                            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+              <div class="item">
+                <h3 class="title">근면상 - 책임감<span class="place"><a> 의정부 동암중학교</a></span> <span class="year">(2021)</span>
+                </h3>
+                <p>위 학생은 주어진 일에 책임감을 가지고 꾸준히 생활하는 모습이 다른 학생의 모범이 되므로 이에 표창함.</p>
+              </div>
+              <!--//item-->
 
-                            <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-                            <link rel="stylesheet"
-                                  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+              <div class="item">
+                <h3 class="title">상장 - 발명아이디어대회<span class="place"><a> 의정부 동암중학교</a></span> <span
+                    class="year">(2021)</span></h3>
+                <p>위 학생은 발명아이디어대회에서 두서와 같은 성적을 얻었기에 이 상장을 수여합니다.</p>
+              </div>
+              <!--//item-->
 
-                            <!-- Prepare a container for your calendar. -->
-                            <div class="calendar">
-                                <!-- Loading stuff -->
-                                Loading the data just for you.
-                            </div>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//section-inner-->
+        </section>
+        <!--//section-->
+        <section class="github section">
+          <div class="section-inner shadow-sm rounded">
+            <h2 class="heading">My GitHub</h2>
+            <div class="github-graph">
 
-                            <script>
-                                GitHubCalendar(".calendar", "SangUk-Jeon");
+            </div>
+            <!--//github-graph-->
+            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 
-                                // or enable responsive functionality:
-                                GitHubCalendar(".calendar", "SangUk-Jeon", { responsive: true });
+            <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+            <link rel="stylesheet"
+              href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 
-                                // Use a proxy
-                                GitHubCalendar(".calendar", "SangUk-Jeon", {
-                                }).then(r => r.text())
-                            </script>
-                            <div id="feed">
-                                <iframe allowtransparency="true" frameborder="0" scrolling="no" seamless="seamless" src="https://sanguk-jeon.github.io/PortfolioSite/assets/plugins/git_activity/gh-activity.html?user=SangUk-Jeon&type=user" style="margin-top: 20px" height="400px" width="100%"></iframe>
-                            </div>
-</div><!--//secton-inner-->
-                </section><!--//section-->
-            </div><!--//primary-->
-            <div class="secondary col-lg-4 col-12">
-                 <aside class="info aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <h2 class="heading">Information</h2>
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>의정부, 한국</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:jeonsanguk17@gmail.com">jeonsanguk17@gmail.com</a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://sangukjeon.tech">https://sangukjeon.tech</a></li>
-                            </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
-                
-                <aside class="skills aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Langueges</h2>
-                        <div class="content">
-                            <p class="intro">
-                                사용 가능한 프로그래밍 언어입니다.</p>
-                            <div class="skillset">
-                               
-                                <div class="item">
-                                    <h3 class="level-title">C &amp; C++<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="초급 수준에서 중급 수준"><i class="fas fa-info-circle"></i>초 - 중급</span></h3>
+            <!-- Prepare a container for your calendar. -->
+            <div class="calendar">
+              <!-- Loading stuff -->
+              Loading the data just for you.
+            </div>
 
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 65%" aria-valuenow="65"  aria-valuemin="0" aria-valuemax="96"></div>
-									</div><!--//level-bar-->                               
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Python<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="초급 수준"><i class="fas fa-info-circle"></i>초급</span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 50%" aria-valuenow="50"  aria-valuemin="0" aria-valuemax="94"></div>
-									</div><!--//level-bar-->                                   
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">HTML &amp; CSS<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="초급 수준"><i class="fas fa-info-circle"></i>초급</span></h3>
-                                    <div class="level-bar progress">
-									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 45%" aria-valuenow="45"  aria-valuemin="0" aria-valuemax="96"></div>
-									</div><!--//level-bar-->                                  
-                                </div><!--//item-->
-                                
-                                <p><a class="more-link" href="https://github.com/SangUk-Jeon"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> 
-                            </div>              
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//section-->
-                
-                <aside class="testimonials aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Competition and Certificate of Completion</h2>
-                        <div class="content">
-                            <div class="item">
-                             <p><i class="fas fa-certificate"></i> 2019 드림메이커스</p>
-                             <p><i class="fas fa-certificate"></i> 2020 통일리더캠프</p>
-                             <p><i class="fas fa-certificate"></i> 2021 KAIST 사이버영재교육 C 언어 1레벨</p>
-                             <p><i class="fas fa-certificate"></i> 2021 삼성 주니어 SW 창작대회</p>
-                             <p><i class="fas fa-certificate"></i> 2021 환경일기장</p>
-                            </div><!--//item-->
-                            
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                <aside class="education aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">                      
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> 초등학교 졸업</h3>
-                                <h4 class="university">의정부 청룡초등학교 <span class="year">(2014-2019)</span></h4>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> 중학교 재학</h3>
-                                <h4 class="university">의정부 동암중학교 <span class="year">(2020- the present)</span></h4>
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                            
-                <aside class="languages aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Languages</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">초급 <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>Korean:</strong></span>
-                                    <span class="level">프로 <br class="visible-sm visible-xs" /><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></i></span>
-                                </li><!--//item-->
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                <aside class="list music aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Favourite Music</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-headphones"></i> <a href="https://youtu.be/0tkgGcnRNTE">볼빨간사춘기 - 나의 사춘기에게</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="https://youtu.be/LRrsW8-TkQ0">AKMU - FREEDOM</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="https://youtu.be/KK-ffKikwBw">10cm - 서울의 잠못이루는 밤</a></li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-              
-            </div><!--//secondary-->    
-        </div><!--//row-->
-    </div><!--//masonry-->
-    
-    <!-- ******FOOTER****** --> 
-    <footer class="footer">
-        <div class="container text-center">
-                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <a href="https://www.sanguk.life" target="_blank">sanguk jeon |</a> <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
- 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script> 
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>          
+            <script>
+              GitHubCalendar(".calendar", "SangUk-Jeon");
+
+              // or enable responsive functionality:
+              GitHubCalendar(".calendar", "SangUk-Jeon", { responsive: true });
+
+              // Use a proxy
+              GitHubCalendar(".calendar", "SangUk-Jeon", {
+              }).then(r => r.text())
+            </script>
+            <div id="feed">
+              <iframe allowtransparency="true" frameborder="0" scrolling="no" seamless="seamless"
+                src="https://sanguk-jeon.github.io/PortfolioSite/assets/plugins/git_activity/gh-activity.html?user=SangUk-Jeon&type=user"
+                style="margin-top: 20px" height="400px" width="100%"></iframe>
+            </div>
+          </div>
+          <!--//secton-inner-->
+        </section>
+        <!--//section-->
+      </div>
+      <!--//primary-->
+      <div class="secondary col-lg-4 col-12">
+        <aside class="info aside section">
+          <div class="section-inner shadow-sm rounded">
+            <h2 class="heading sr-only">Basic Information</h2>
+            <div class="content">
+              <ul class="list-unstyled">
+                <h2 class="heading">Information</h2>
+                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>의정부, 한국</li>
+                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
+                    href="mailto:jeonsanguk17@gmail.com">jeonsanguk17@gmail.com</a></li>
+                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a
+                    href="https://sanguk-jeon.github.io/PortfolioSite/">https://sanguk-jeon.github.io/PortfolioSite/</a>
+                </li>
+              </ul>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//section-inner-->
+        </aside>
+        <!--//aside-->
+
+        <aside class="skills aside section">
+          <div class="section-inner shadow-sm rounded">
+            <h2 class="heading">Langueges</h2>
+            <div class="content">
+
+              <div class="skillset">
+
+                <div class="item">
+                  <h3 class="level-title">C &amp; C++<span class="level-label" data-bs-toggle="tooltip"
+                      data-bs-placement="left" title="초급 수준에서 중급 수준"><i class="fas fa-info-circle"></i>초 - 중급</span>
+                  </h3>
+
+                  <div class="level-bar progress">
+                    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 70%" aria-valuenow="70"
+                      aria-valuemin="0" aria-valuemax="96"></div>
+                  </div>
+                  <!--//level-bar-->
+                </div>
+                <!--//item-->
+
+                <div class="item">
+                  <h3 class="level-title">Python<span class="level-label" data-bs-toggle="tooltip"
+                      data-bs-placement="left" title="초급 수준"><i class="fas fa-info-circle"></i>초급</span></h3>
+                  <div class="level-bar progress">
+                    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 55%" aria-valuenow="55"
+                      aria-valuemin="0" aria-valuemax="94"></div>
+                  </div>
+                  <!--//level-bar-->
+                </div>
+                <!--//item-->
+
+                <div class="item">
+                  <h3 class="level-title">JavaScript<span class="level-label" data-bs-toggle="tooltip"
+                      data-bs-placement="left" title="React를 시작하면서 동시에 JavaScript도 시작하였습니다."><i class="fas fa-info-circle"></i>초급</span></h3>
+                  <div class="level-bar progress">
+                    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 30%" aria-valuenow="30"
+                      aria-valuemin="0" aria-valuemax="96"></div>
+                  </div>
+                  <!--//level-bar-->
+                </div>
+                <!--//item-->
+
+                <div class="item">
+                  <h3 class="level-title">HTML &amp; CSS<span class="level-label" data-bs-toggle="tooltip"
+                      data-bs-placement="left" title="예전 개인 홈페이지를 만들면서 시작하였습니다."><i class="fas fa-info-circle"></i>초급</span></h3>
+                  <div class="level-bar progress">
+                    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 45%" aria-valuenow="45"
+                      aria-valuemin="0" aria-valuemax="96"></div>
+                  </div>
+                  <!--//level-bar-->
+                </div>
+                <!--//item-->
+
+                <p><a class="more-link" href="https://github.com/SangUk-Jeon"><i
+                      class="fas fa-external-link-alt"></i>More on GitHub</a></p>
+              </div>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//section-inner-->
+        </aside>
+        <!--//section-->
+        <aside class="skills aside section">
+          <div class="section-inner shadow-sm rounded">
+            <h2 class="heading">Tools</h2>
+            <div class="content">
+              <div class="skillset">
+
+                <div class="item">
+                  <h3 class="level-title">Visual Studio & Code<Reaspan class="level-label" data-bs-toggle="tooltip"
+                      data-bs-placement="left" title="중급 수준"><i class="fas fa-info-circle"></i>중급</span>
+                  </h3>
+
+                  <div class="level-bar progress">
+                    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 65%" aria-valuenow="65"
+                      aria-valuemin="0" aria-valuemax="96"></div>
+                  </div>
+                  <!--//level-bar-->
+                </div>
+                <!--//item-->
+
+                <div class="item">
+                  <h3 class="level-title">React<span class="level-label" data-bs-toggle="tooltip"
+                      data-bs-placement="left" title="초급 수준"><i class="fas fa-info-circle"></i>초급</span></h3>
+                  <div class="level-bar progress">
+                    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 50%" aria-valuenow="50"
+                      aria-valuemin="0" aria-valuemax="94"></div>
+                  </div>
+                  <!--//level-bar-->
+                </div>
+                <!--//item-->
+
+              </div>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//section-inner-->
+        </aside>
+        <!--//section-->
+
+        <aside class="testimonials aside section">
+          <div class="section-inner shadow-sm rounded">
+            <h2 class="heading">Competition and Certificate of Completion</h2>
+            <div class="content">
+              <div class="item">
+                <p><i class="fas fa-certificate"></i> 2019 드림메이커스</p>
+                <p><i class="fas fa-certificate"></i> 2020 통일리더캠프</p>
+                <p><i class="fas fa-certificate"></i> 2021 KAIST 사이버영재교육 C 언어 1레벨</p>
+                <p><i class="fas fa-certificate"></i> 2021 삼성 주니어 SW 창작대회</p>
+                <p><i class="fas fa-certificate"></i> 2021 환경일기장</p>
+              </div>
+              <!--//item-->
+
+            </div>
+            <!--//content-->
+          </div>
+          <!--//section-inner-->
+        </aside>
+        <!--//section-->
+
+        <aside class="education aside section">
+          <div class="section-inner shadow-sm rounded">
+            <h2 class="heading">Education</h2>
+            <div class="content">
+              <div class="item">
+                <h3 class="title"><i class="fas fa-graduation-cap"></i> 초등학교 졸업</h3>
+                <h4 class="university">의정부 청룡초등학교 <span class="year">(2014-2019)</span></h4>
+              </div>
+              <!--//item-->
+              <div class="item">
+                <h3 class="title"><i class="fas fa-graduation-cap"></i> 중학교 재학</h3>
+                <h4 class="university">의정부 동암중학교 <span class="year">(2020- the present)</span></h4>
+              </div>
+              <!--//item-->
+            </div>
+            <!--//content-->
+          </div>
+          <!--//section-inner-->
+        </aside>
+        <!--//section-->
+
+        <aside class="languages aside section">
+          <div class="section-inner shadow-sm rounded">
+            <h2 class="heading">Languages</h2>
+            <div class="content">
+              <ul class="list-unstyled">
+                <li class="item">
+                  <span class="title"><strong>English:</strong></span>
+                  <span class="level">초급 <br class="visible-xs" /><i class="fas fa-star"></i> <i
+                      class="fas fa-star"></i> </span>
+                </li>
+                <!--//item-->
+                <li class="item">
+                  <span class="title"><strong>Korean:</strong></span>
+                  <span class="level">프로 <br class="visible-sm visible-xs" /><i class="fas fa-star"></i> <i
+                      class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                      class="fas fa-star"></i></i></span>
+                </li>
+                <!--//item-->
+              </ul>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//section-inner-->
+        </aside>
+        <!--//section-->
+
+        <aside class="list music aside section">
+          <div class="section-inner shadow-sm rounded">
+            <h2 class="heading">Favourite Music</h2>
+            <div class="content">
+              <ul class="list-unstyled">
+                <li><i class="fas fa-headphones"></i> <a href="https://youtu.be/0tkgGcnRNTE">볼빨간사춘기 - 나의 사춘기에게</a></li>
+                <li><i class="fas fa-headphones"></i> <a href="https://youtu.be/LRrsW8-TkQ0">AKMU - FREEDOM</a></li>
+                <li><i class="fas fa-headphones"></i> <a href="https://youtu.be/KK-ffKikwBw">10cm - 서울의 잠못이루는 밤</a></li>
+              </ul>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//section-inner-->
+        </aside>
+        <!--//section-->
+
+      </div>
+      <!--//secondary-->
+    </div>
+    <!--//row-->
+  </div>
+  <!--//masonry-->
+
+  <!-- ******FOOTER****** -->
+  <footer class="footer">
+    <div class="container text-center">
+      <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+      <small class="copyright">Designed with <a href="https://www.sanguk.life" target="_blank">sanguk jeon |</a> <a
+          href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+    </div>
+    <!--//container-->
+  </footer>
+  <!--//footer-->
+
+  <!-- Javascript -->
+  <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script>
+  <!-- github calendar plugin -->
+  <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+  <!-- github activity plugin -->
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+  <!-- custom js -->
+  <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
-</html> 
+
+</html>
